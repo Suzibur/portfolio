@@ -1,13 +1,44 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Teko&display=swap");
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: "Teko", sans-serif;
+  background-color: #0a1930;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.btn {
+  cursor: pointer;
+  color: #49bca7;
+  padding: 0.2rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 0.15rem;
+  font-weight: lighter;
+  background-color: transparent;
+  border: 0.15rem solid #49bca7;
+  transition: 200ms;
+}
+.btn:hover {
+  background-color: #7df0db63;
+  color: #cbd6f6;
+}
+
+.title {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.title span{
+  color: #49bca7;
+  margin-right: .5rem;
+}
+.border {
+  height: 2px;
+  margin-left: 1rem;
+  width: 300px;
+  border-bottom: 1px solid #213454;
+}
+@media screen and (max-width: 768px) {
+  .border{
+    width: 200px;
+  }
 }

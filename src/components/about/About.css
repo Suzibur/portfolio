@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+#about {
+  margin: 3rem 0;
+}
+.aboutContainer {
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  /* align-items: center; */
+  justify-content: space-between;
+}
+.aboutText {
+  grid-column: 1/7;
+}
+.aboutText p {
+  text-justify: auto;
+  color: #45506b;
+  font-family: "Roboto", sans-serif;
+}
+.aboutText p span {
+  color: #49bca7;
+}
+.techIcon {
+  margin: 0.5rem 0;
+}
+.techIcon li {
+  font-size: 2rem;
+  color: #49bca7;
+  margin-right: 2rem;
+  list-style-type: none;
+  display: inline-block;
+}
+.techIcon:nth-child(2n + 1) {
+  margin: 0 1rem;
+}
+.aboutImg {
+  grid-column: 9/13;
+}
+.img {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  background-image: url(../../img/profile.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img::after {
+  position: absolute;
+  content: "";
+  left: 0.5rem;
+  top: 0.5rem;
+  border: 0.3rem solid #49bca7;
+  width: 300px;
+  height: 300px;
+  /* z-index: -1; */
+}
+.imgOverlay {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  background-color: #1dffd657;
+}
+@media screen and (max-width: 768px) {
+  .aboutText p {
+    font-size: .75rem;
+  }
+  .img,
+  .imgOverlay,
+  .img::after {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .aboutContainer {
+    grid-template-rows: auto auto;
+    grid-gap: 2rem 0;
+  }
+  .aboutText,
+  .aboutImg {
+    grid-column: 1/13;
+    margin: 0 auto;
+  }
+  .aboutText {
+    grid-row: 2/3;
+  }
+  .aboutText p {
+    font-size: 0.5rem;
+  }
+  .techIcon li{
+    font-size:1rem;
+    margin-right: 1rem;
+  }
+  .aboutImg {
+    grid-row: 1/2;
+  }
+  .img,
+  .imgOverlay,
+  .img::after {
+    width: 150px;
+    height: 150px;
+  }
+}

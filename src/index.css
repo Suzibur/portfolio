@@ -31,14 +31,25 @@
   color: #49bca7;
   margin-right: .5rem;
 }
+.title h1{
+  color: #cbd6f6;
+}
 .border {
   height: 2px;
   margin-left: 1rem;
-  width: 300px;
-  border-bottom: 1px solid #213454;
+  width: 200px;
+  border-bottom: 2px solid #213454;
 }
 @media screen and (max-width: 768px) {
   .border{
     width: 200px;
+  }
+}
+@media  screen and (max-width: 425px) {
+  .title h1{
+    font-size:1rem;
+  }
+  .border{
+    width: 50px;
   }
 }

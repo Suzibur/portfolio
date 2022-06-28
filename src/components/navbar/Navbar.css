@@ -39,27 +39,20 @@
   .navbar {
     padding: 1rem;
   }
-  .navbar .bar {
-    display: block;
-  }
-  .navItem {
-    left: -1000%;
-    position: fixed;
-    top: 5rem;
-    width: 100%;
-    height: 100vh;
-    background-color: #0a1930;
-    transition: left 100ms ease-in-out;
-    display: block;
-  }
-  .navItem ul li {
-    display: block;
-  }
   .navItem .btn {
     font-size: 0.75rem;
     margin: 1rem 2rem;
   }
-  #navCheck:checked ~ .navItem {
-    left: 0;
+  .navItem ul li{
+    font-size:.75rem;
+  }
+}
+@media screen and (max-width:425px){
+  .navMenuList{
+    display:none;
+  }
+  .navItem .btn {
+    font-size: 0.75rem;
+    margin: .75rem;
   }
 }

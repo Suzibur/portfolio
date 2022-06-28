@@ -1,8 +1,6 @@
 import React from 'react';
-import logo from '../../img/logo.png'
-import './Navbar.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBarsStaggered } from '@fortawesome/free-solid-svg-icons';
+import logo from '../../img/logo.png';
+import './Navbar.css';
 
 const Navbar = () => {
     return (
@@ -10,10 +8,6 @@ const Navbar = () => {
             <div className="navLogo">
                 <img src={logo} alt="" srcset="" />
             </div>
-            <input type="checkbox" id="navCheck" />
-            <label htmlFor="navCheck">
-                <FontAwesomeIcon icon={faBarsStaggered} className="bar" />
-            </label>
             <div className="navItem">
                 <ul className="navMenuList">
                     <li><a href="#about"><span>01.</span>about</a></li>

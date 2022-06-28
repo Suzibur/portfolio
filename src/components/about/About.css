@@ -51,8 +51,8 @@
 .img::after {
   position: absolute;
   content: "";
-  left: 0.5rem;
-  top: 0.5rem;
+  left: .75rem;
+  top: .75rem;
   border: 0.3rem solid #49bca7;
   width: 300px;
   height: 300px;
@@ -74,6 +74,10 @@
     width: 200px;
     height: 200px;
   }
+  .img::after{
+    top: .5rem;
+    left: .5rem;
+  }
 }
 @media screen and (max-width: 425px) {
   .aboutContainer {
@@ -83,7 +87,6 @@
   .aboutText,
   .aboutImg {
     grid-column: 1/13;
-    margin: 0 auto;
   }
   .aboutText {
     grid-row: 2/3;
